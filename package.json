@@ -1,0 +1,26 @@
+{
+  "name": "backend-express",
+  "version": "1.0.0",
+  "description": "fullstack express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/tttpppppp/express.git"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "react"
+  ],
+  "author": "Tran Tien Phuc",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
