@@ -1,15 +1,16 @@
 const express = require("express");
+const router = require("./router/root.route");
 const app = express();
 require('dotenv').config()
-
 const port = process.env.PORT;
 
-app.get("/", function (req, res) {
-  res.send("Hello World!");
-});
+app.use(express.json())
+app.use(router)
 
 app.listen(port, function () {
   console.log(`http://localhost:${port}`);
 });
- 
-console.log(1234)
+
+app.get("/", function (req, res) {
+  return res.send("Hello World!");
+});
